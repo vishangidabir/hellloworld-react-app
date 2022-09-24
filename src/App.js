@@ -1,5 +1,7 @@
 import logo from './logo.jpg'
 import React from "react";
+import Home from "./components/Home"
+import About from "./components/About"
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -26,6 +28,7 @@ class App extends React.Component {
       this.setState({ nameError: "" });
     } else this.setState({ nameError: "Incorrect name" });
   };
+ 
   render(){
     return(
       <div>
@@ -35,7 +38,7 @@ class App extends React.Component {
         alt="The Bridgelabz logo : a Bridge to Employment through lab works" />
       </div>
       <div>
-        <input onChange={this.onNameChange}/>
+        <inpu t onChange={this.onNameChange}/>
         <span className="error-output">{this.state.nameError}</span>
       </div>
       </div>
@@ -43,5 +46,5 @@ class App extends React.Component {
   }
 }
 
-
 export default App;
+

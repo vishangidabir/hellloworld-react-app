@@ -21,6 +21,10 @@ img {
   width: 15%;
 }
 
+input {
+align-items: center;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -70,5 +74,6 @@ p,li{
   letter-spacing: 1px;
 
 }
+
 
 
